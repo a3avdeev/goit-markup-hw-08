@@ -1,0 +1,36 @@
+.work-section {
+    padding-bottom: 94px;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-list-img+.work-list-img {
+    margin-left: 30px;
+}
+
+.worklist-label {
+    position: relative;
+}
+
+.worklist-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+    overflow: auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
