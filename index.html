@@ -51,16 +51,59 @@
                 </li>
             </ul>
 
-            <button type="button" class="burger-menu">
+            <button type="button" class="burger-menu" data-menu-open>
                 <svg class="burger-menu__icon" width="24" height="16">
                     <use href="./img/svg/icons.svg#burger-icon"></use>
                 </svg>
             </button>
         </div>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
             <div class="container mobile-menu__container">
-                
+                <button type="button" class="mobile-menu__close-button"data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="18" height="18">
+                        <use href="./img/svg/icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-memu__navigation">
+                    <ul class="mobile-menu__nav-list list">
+                        <li class="mobile-menu__nav-item">
+                            <a class="mobile-menu__nav-link link current" href="#studio">Студия</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a class="mobile-menu__nav-link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a class="mobile-menu__nav-link link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__contacts">
+                    <ul class="mobile-menu__contacts-list list">
+                        <li class="mobile-menu__contacts-item">
+                            <a class="mobile-menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contacts-item">
+                            <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__social">
+                    <ul class="mobile-menu__social-list list">
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
