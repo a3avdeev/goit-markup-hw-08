@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 609px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,8 +40,6 @@
     }
 }
 
-
-
 .contact-form-title {
     font-family: var(--font-family);
     font-style: normal;
@@ -72,8 +70,6 @@
     }
 }
 
-
-
 .contact-form-field-wrapper {
     position: relative;
     display: block;
@@ -94,8 +90,6 @@
         fill: var(--accent-color);
     }
 }
-
-
 
 .contact-form-label {
     margin-bottom: 10px;
@@ -137,8 +131,6 @@
     }
 }
 
-
-
 .policy-label {
     font-family: var(--font-family);
     font-style: normal;
@@ -174,8 +166,6 @@
         }
     }
 }
-
-
 
 .link-form {
     color: var(--accent-color);
