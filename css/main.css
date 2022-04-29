@@ -729,7 +729,7 @@ li {
   .hero {
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/mobile-header-img.jpg);
-    background-size: 100% auto;
+    background-size: 480px 400px;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 118px;
@@ -747,7 +747,7 @@ li {
   .hero {
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/tablet-header-img.jpg);
-    background-size: auto auto;
+    background-size: 768px 400px;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 118px;
@@ -805,6 +805,12 @@ li {
 
 .order-button:hover, .order-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 767px) {
+  .about-thumb {
+    display: none;
+  }
 }
 
 .about {
