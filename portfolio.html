@@ -49,6 +49,61 @@
                     </a>
                 </li>
             </ul>
+
+            <button type="button" class="burger-menu" data-menu-open>
+                <svg class="burger-menu__icon" width="24" height="16">
+                    <use href="./img/svg/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-button" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="18" height="18">
+                        <use href="./img/svg/icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-memu__navigation">
+                    <ul class="mobile-menu__nav-list list">
+                        <li class="mobile-menu__nav-item">
+                            <a class="mobile-menu__nav-link link current" href="#studio">Студия</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a class="mobile-menu__nav-link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a class="mobile-menu__nav-link link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__contacts">
+                    <ul class="mobile-menu__contacts-list list">
+                        <li class="mobile-menu__contacts-item">
+                            <a class="mobile-menu__contacts-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__contacts-item">
+                            <a class="mobile-menu__contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__social">
+                    <ul class="mobile-menu__social-list list">
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__social-item">
+                            <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -76,41 +131,23 @@
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
                             <picture>
-                                <source 
-                                    srcset="./img/portfolio/desktop-project-1.webp 1x, ./img/portfolio/desktop-project-1@2x.webp 2x"
-                                    src=""
-                                    media="(min-width:1200px)"
-                                    type="image/webp"
-                                />
-                                <source 
-                                    srcset="./img/portfolio/desktop-project-1.jpg 1x, ./img/portfolio/desktop-project-1@2x.jpg 2x"
-                                    src=""
-                                    media="(min-width:1200px)"
-                                />
-
-                                <source 
-                                    srcset="./img/portfolio/tablet-project-1.webp 1x, ./img/portfolio/tablet-project-1@2x.webp 2x"
-                                    media="(min-width:768px)" 
-                                    type="image/webp" 
-                                />
-                                <source 
-                                    srcset="./img/portfolio/tablet-project-1.jpg 1x, ./img/portfolio/tablet-project-1@2x.jpg 2x" 
-                                    media="(min-width:768px)" 
-                                />
-
-                                <source 
-                                    srcset="./img/portfolio/tablet-project-1.webp 1x, ./img/portfolio/tablet-project-1@2x.webp 2x"
-                                    media="(max-width:767px)" 
-                                    type="image/webp" 
-                                />
-                                <source 
-                                    srcset="./img/portfolio/tablet-project-1.jpg 1x, ./img/portfolio/tablet-project-1@2x.jpg 2x"
-                                    media="(max-width:767px)"
-                                />
+                                <source srcset="./img/portfolio/desktop-project-1.webp 1x, ./img/portfolio/desktop-project-1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-1.jpg 1x, ./img/portfolio/desktop-project-1@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-1.webp 1x, ./img/portfolio/tablet-project-1@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-1.jpg 1x, ./img/portfolio/tablet-project-1@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-1.webp 1x, ./img/portfolio/mobile-project-1@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-1.jpg 1x, ./img/portfolio/mobile-project-1@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
                                 <img class="portfolio-img" src="./img/portfolio/mobile-project-1.jpg" alt="Страница сайта с работниками Технокряк">
                             </picture>
-                            <p class="overlay-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                            шпионажа и атак на защищённые сервера конкурентов.</p>
+                            <p class="overlay-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
                         <div class="text-box">
                             <h2 class="portfolio-title">Технокряк</h2>
@@ -121,22 +158,21 @@
                         <div class="portfolio-overlay">
                             <picture>
                                 <source srcset="./img/portfolio/desktop-project-2.webp 1x, ./img/portfolio/desktop-project-2@2x.webp 2x"
-                                    media="(min-width:1200px)" type="image/webp">
+                                    media="(min-width: 1200px)" type="image/webp" />
                                 <source srcset="./img/portfolio/desktop-project-2.jpg 1x, ./img/portfolio/desktop-project-2@2x.jpg 2x"
-                                    media="(min-width:1200px)">
+                                    media="(min-width: 1200px)" />
                                 
                                 <source srcset="./img/portfolio/tablet-project-2.webp 1x, ./img/portfolio/tablet-project-2@2x.webp 2x"
-                                    media="(min-width:768px)" type="image/webp">
+                                    media="(min-width: 768px)" type="image/webp" />
                                 <source srcset="./img/portfolio/tablet-project-2.jpg 1x, ./img/portfolio/tablet-project-2@2x.jpg 2x"
-                                    media="(min-width:768px)">
+                                    media="(min-width: 768px)" />
                                 
-                                <source srcset="./img/portfolio/tablet-project-2.webp 1x, ./img/portfolio/tablet-project-2@2x.webp 2x"
-                                    media="(max-width:767px)" type="image/webp">
-                                <source srcset="./img/portfolio/tablet-project-2.jpg 1x, ./img/portfolio/tablet-project-2@2x.jpg 2x"
-                                    media="(max-width:767px)">
-                                <img class="portfolio-img" src="./img/portfolio-img-2.jpg" alt="два баскетболиста борятся за мяч">
+                                <source srcset="./img/portfolio/mobile-project-2.webp 1x, ./img/portfolio/mobile-project-2@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-2.jpg 1x, ./img/portfolio/mobile-project-2@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-2.jpg" alt="два баскетболиста борятся за мяч">
                             </picture>
-                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -146,7 +182,23 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-3.jpg" alt="логотип ресторана Сифуд">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-3.webp 1x, ./img/portfolio/desktop-project-3@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-3.jpg 1x, ./img/portfolio/desktop-project-3@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-3.webp 1x, ./img/portfolio/tablet-project-3@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-3.jpg 1x, ./img/portfolio/tablet-project-3@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-3.webp 1x, ./img/portfolio/mobile-project-3@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-3.jpg 1x, ./img/portfolio/mobile-project-3@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-3.jpg" alt="логотип ресторана Сифуд">
+                            </picture>
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -156,7 +208,24 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-4.jpg" alt="Наушники">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-4.webp 1x, ./img/portfolio/desktop-project-4@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-4.jpg 1x, ./img/portfolio/desktop-project-4@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-4.webp 1x, ./img/portfolio/tablet-project-4@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-4.jpg 1x, ./img/portfolio/tablet-project-4@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-4.webp 1x, ./img/portfolio/mobile-project-4@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-4.jpg 1x, ./img/portfolio/mobile-project-4@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio-img-4.jpg" alt="Наушники">
+                            </picture>
+                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -166,7 +235,24 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-5.jpg" alt="Две подарочные коробки">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-5.webp 1x, ./img/portfolio/desktop-project-5@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-5.jpg 1x, ./img/portfolio/desktop-project-5@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-5.webp 1x, ./img/portfolio/tablet-project-5@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-5.jpg 1x, ./img/portfolio/tablet-project-5@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-5.webp 1x, ./img/portfolio/mobile-project-5@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-5.jpg 1x, ./img/portfolio/mobile-project-5@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-5.jpg" alt="Две подарочные коробки">
+                            </picture>
+                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -176,7 +262,24 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-6.jpg" alt="Монитор с веб-страницей">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-6.webp 1x, ./img/portfolio/desktop-project-6@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-6.jpg 1x, ./img/portfolio/desktop-project-6@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-6.webp 1x, ./img/portfolio/tablet-project-6@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-6.jpg 1x, ./img/portfolio/tablet-project-6@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-6.webp 1x, ./img/portfolio/mobile-project-6@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-6.jpg 1x, ./img/portfolio/mobile-project-6@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-6.jpg" alt="Монитор с веб-страницей">
+                            </picture>
+                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -186,7 +289,24 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-7.jpg" alt="Раскрытый журнал">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-7.webp 1x, ./img/portfolio/desktop-project-7@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-7.jpg 1x, ./img/portfolio/desktop-project-7@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-7.webp 1x, ./img/portfolio/tablet-project-7@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-7.jpg 1x, ./img/portfolio/tablet-project-7@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-7.webp 1x, ./img/portfolio/mobile-project-7@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-7.jpg 1x, ./img/portfolio/mobile-project-7@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-7.jpg" alt="Раскрытый журнал">
+                            </picture>
+                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -196,7 +316,24 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-8.jpg" alt="Ярлычок на веревочке">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-8.webp 1x, ./img/portfolio/desktop-project-8@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-8.jpg 1x, ./img/portfolio/desktop-project-8@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-8.webp 1x, ./img/portfolio/tablet-project-8@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-8.jpg 1x, ./img/portfolio/tablet-project-8@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-8.webp 1x, ./img/portfolio/mobile-project-8@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-8.jpg 1x, ./img/portfolio/mobile-project-8@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-8.jpg" alt="Ярлычок на веревочке">
+                            </picture>
+                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
@@ -206,7 +343,24 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="portfolio-overlay">
-                            <img width="370" height="294" class="portfolio-img" src="./img/portfolio-img-9.jpg" alt="Ноутбук с загруженной веб-страницей">
+                            <picture>
+                                <source srcset="./img/portfolio/desktop-project-9.webp 1x, ./img/portfolio/desktop-project-9@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp" />
+                                <source srcset="./img/portfolio/desktop-project-9.jpg 1x, ./img/portfolio/desktop-project-9@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                
+                                <source srcset="./img/portfolio/tablet-project-9.webp 1x, ./img/portfolio/tablet-project-9@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp" />
+                                <source srcset="./img/portfolio/tablet-project-9.jpg 1x, ./img/portfolio/tablet-project-9@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                
+                                <source srcset="./img/portfolio/mobile-project-9.webp 1x, ./img/portfolio/mobile-project-9@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp" />
+                                <source srcset="./img/portfolio/mobile-project-9.jpg 1x, ./img/portfolio/mobile-project-9@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img class="portfolio-img" src="./img/portfolio/mobile-project-9.jpg" alt="Ноутбук с загруженной веб-страницей">
+                            </picture>
+                            
                             <p class="overlay-content"></p>
                         </div>                        
                         <div class="text-box">
