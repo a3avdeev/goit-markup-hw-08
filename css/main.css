@@ -485,6 +485,7 @@ li {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 1;
   }
   .mobile-menu__container {
     position: relative;
@@ -861,6 +862,12 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
+  }
 }
 
 .work-section {
