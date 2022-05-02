@@ -1,7 +1,71 @@
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+    .clients {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .clients-list {
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px) / 2);
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+
+    .clients-item {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .clients-link {
+        width: 210px;
+        height: 92px;
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .clients {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .clients-list {
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) / 3);
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+    
+    .clients-item {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .clients-link {
+        width: 226px;
+        height: 92px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .clients-list {
+        flex-direction: row;
+    }
+
+    .clients-item+.clients-item {
+        margin-left: 30px;
+    }
+
+    .clients-link {
+        width: 170px;
+        height: 92px;
+    }
+}
+
 
 .clients-list {
     display: flex;
@@ -9,14 +73,7 @@
     align-items: center;
 }
 
-.clients-item+.clients-item {
-    margin-left: 30px;
-}
-
 .clients-link {
-    width: 170px;
-    height: 92px;
-
     display: flex;
     justify-content: center;
     align-items: center;
