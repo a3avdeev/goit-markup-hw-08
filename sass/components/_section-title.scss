@@ -1,6 +1,17 @@
-.section-title {
-    margin-bottom: 50px;
+@media screen and (max-width: 1199px) {
+    .section-title {
+        margin-bottom: 30px;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .section-title {
+        margin-bottom: 50px;
+    }
+}
+
+
+.section-title {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: bold;

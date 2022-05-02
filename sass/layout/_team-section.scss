@@ -1,36 +1,104 @@
+@media screen and (max-width:767px) {
+    .team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .card {
+        width: 450px;
+        height: 622px;
+    }
+
+    .team-list {
+        flex-direction: column;
+    }
+
+    .team-list-item+.team-list-item {
+        margin-top: 30px;
+    }
+
+    .team-text {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-left: 122px;
+        padding-right: 122px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .card {
+        width: 354px;
+        height: 536px;
+    }
+
+    .team-list {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+
+    .team-list-item {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .team-text {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .card {
+        width: 270px;
+        height: 428px;
+    }
+
+    .team-list {
+        flex-basis: calc((100% - 90px) / 4);
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+    
+    .team-list-item {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .team-text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
 .team {
     background-color: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 90px) / 4);
-    margin-left: -30px;
-    margin-bottom: -30px;
-}
-
-.team-list-item {
-    margin-left: 30px;
-    margin-bottom: 30px;
 }
 
 .card {
     background: #ffffff;
-    width: 270px;
-    height: 428px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-text {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .team-list-name {

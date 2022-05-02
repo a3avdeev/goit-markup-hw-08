@@ -59,9 +59,15 @@ li {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 100vw;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
 }
 
@@ -483,7 +489,7 @@ li {
   }
   .portfolio-list-item {
     width: 450px;
-    height: 100%;
+    height: auto;
     margin-bottom: 30px;
   }
 }
@@ -500,7 +506,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 354px;
-    height: 440px;
+    height: auto;
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -515,7 +521,7 @@ li {
   }
   .portfolio-list-item {
     width: 370px;
-    height: 100%;
+    height: auto;
   }
 }
 
