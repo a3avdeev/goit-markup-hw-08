@@ -1,11 +1,11 @@
 @media screen and (max-width:576px) {
     .hero {
         // width: 480px;
-        min-height: 400px;
+        // min-height: 400px;
         background-color: #2f303a;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('/img/hero/mobile-header-img.jpg');
+            url('../img/hero/mobile-header-img.jpg');
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -19,7 +19,7 @@
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('/img/hero/mobile-header-img@2x.jpg');
+            url('../img/hero/mobile-header-img@2x.jpg');
         }
     }
 }
@@ -28,11 +28,11 @@
 @media screen and (min-width:577px) and (max-width:960px) {
     .hero {
         // width: 768px;
-        min-height: 400px;
+        // min-height: 400px;
         background-color: #2f303a;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('/img/hero/tablet-header-img.jpg');
+            url('../img/hero/tablet-header-img.jpg');
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -46,7 +46,7 @@
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url('/img/hero/tablet-header-img@2x.jpg');
+                url('../img/hero/tablet-header-img@2x.jpg');
         }
     }
 }
@@ -54,11 +54,11 @@
 @media screen and (min-width:961px) {
     .hero {
         // width: 1600px;
-        min-height: 600px;
+        // min-height: 600px;
         background-color: #2f303a;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('/img/hero/desktop-header-img.jpg');
+            url('../img/hero/desktop-header-img.jpg');
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -72,7 +72,7 @@
         .hero {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url('/img/hero/desktop-header-img@2x.jpg');
+                url('../img/hero/desktop-header-img@2x.jpg');
         }
     }
 }

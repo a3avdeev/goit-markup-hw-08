@@ -63,7 +63,8 @@ li {
 
 @media screen and (max-width: 479px) {
   .container {
-    width: auto;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
