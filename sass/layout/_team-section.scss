@@ -1,13 +1,20 @@
+@media screen and (max-width: 479px) {
+    .card {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .team {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    .card {
-        width: 450px;
-        height: 622px;
-    }
+    // .card {
+    //     width: 450px;
+    //     height: 622px;
+    // }
 
     .team-list {
         flex-direction: column;
@@ -20,8 +27,8 @@
     .team-text {
         padding-top: 30px;
         padding-bottom: 24px;
-        padding-left: 122px;
-        padding-right: 122px;
+        // padding-left: 122px;
+        // padding-right: 122px;
     }
 }
 
@@ -31,10 +38,10 @@
         padding-bottom: 60px;
     }
 
-    .card {
-        width: 354px;
-        height: 536px;
-    }
+    // .card {
+    //     width: 354px;
+    //     height: 536px;
+    // }
 
     .team-list {
         flex-basis: calc((100% - 30px) / 2);
@@ -50,8 +57,8 @@
     .team-text {
         padding-top: 30px;
         padding-bottom: 24px;
-        padding-left: 74px;
-        padding-right: 74px;
+        // padding-left: 74px;
+        // padding-right: 74px;
     }
 }
 
@@ -61,10 +68,10 @@
         padding-bottom: 94px;
     }
 
-    .card {
-        width: 270px;
-        height: 428px;
-    }
+    // .card {
+    //     width: 270px;
+    //     height: 428px;
+    // }
 
     .team-list {
         flex-basis: calc((100% - 90px) / 4);
@@ -80,8 +87,8 @@
     .team-text {
         padding-top: 30px;
         padding-bottom: 30px;
-        padding-left: 32px;
-        padding-right: 32px;
+        // padding-left: 32px;
+        // padding-right: 32px;
     }
 }
 

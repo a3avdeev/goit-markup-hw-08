@@ -1,3 +1,17 @@
+@media screen and (max-width: 479px) {
+    .footer-subscribe-mail {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .footer-subscribe-mail {
+        width: 450px;
+        height: 50px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .footer-container, 
     .footer-address, 
@@ -24,11 +38,6 @@
     .footer-subscribe-mail, 
     .footer-social-list {
         margin-top: 20px;
-    }
-
-    .footer-subscribe-mail {
-        width: 450px;
-        height: 50px;
     }
 }
 
@@ -114,9 +123,7 @@
         display: flex;
         flex-direction: row;
     }
-
 }
-
 
 .footer {
     background-color: #2f303a;
@@ -165,8 +172,6 @@ address {
         cursor: pointer;
     }
 }
-
-
 
 .footer-social-text {
     font-family: var(--font-family);
