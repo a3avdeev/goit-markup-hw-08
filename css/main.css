@@ -63,7 +63,7 @@ li {
 
 @media screen and (max-width: 479px) {
   .container {
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -217,14 +217,6 @@ li {
   cursor: pointer;
 }
 
-@media screen and (max-width: 450px) {
-  .backdrop {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -242,7 +234,8 @@ li {
 
 @media screen and (max-width: 450px) {
   .modal-window {
-    display: none;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -755,6 +748,7 @@ li {
 
 @media screen and (max-width: 576px) {
   .hero {
+    min-height: 400px;
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero/mobile-header-img.jpg");
     background-size: auto 100%;
@@ -773,6 +767,7 @@ li {
 
 @media screen and (min-width: 577px) and (max-width: 960px) {
   .hero {
+    min-height: 400px;
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero/tablet-header-img.jpg");
     background-size: auto 100%;
@@ -791,6 +786,7 @@ li {
 
 @media screen and (min-width: 961px) {
   .hero {
+    min-height: 600px;
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/hero/desktop-header-img.jpg");
     background-size: auto 100%;
